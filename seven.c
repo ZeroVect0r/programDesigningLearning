@@ -6,7 +6,7 @@ int main(){
     int i;
     scanf("%d",&input);
     for (i = 0 ; i <= input ; i++){
-        if ( i%7 == 0 || i/7 == 10 || (i-7)%10 == 0 ){
+        if ( i%7 == 0 || (i/10)10 == 7 || (i-7)%10 == 0 ){
             continue;
         }else{
             sum = sum + i*i;
@@ -14,4 +14,5 @@ int main(){
     }
     printf("%d",sum);
     return 0;
+
 }
